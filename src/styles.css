@@ -74,4 +74,4 @@
 .month-cell-top{display:flex;align-items:center;justify-content:space-between;min-height:22px}
 .month-add{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;flex:0 0 24px;border:1px solid #e4e7ef;border-radius:7px;background:#fff;color:#6259e8;opacity:.9;cursor:pointer}
 .month-add:hover{background:#eeeaff;border-color:#c9c3ff}
-@media(hover:hover){.month-add{opacity:0}.month-cell:hover .month-add,.month-add:focus-visible{opacity:1}}
+.month-add{opacity:1;visibility:visible}.month-add:focus-visible{outline:2px solid #6259e8;outline-offset:2px}
