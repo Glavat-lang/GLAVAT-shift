@@ -26,7 +26,7 @@ export default function App(){
    const [p,s,u]=await Promise.all([
     supabase.from('profiles').select('id,full_name,color,is_active').order('full_name'),
     supabase.from('shifts').select('*,profiles:profiles!shifts_employee_id_fkey(full_name,color)').gte('shift_date',from).lte('shift_date',to).neq('status','cancelled').order('shift_date').order('start_time'),
-    supabase.from('availability_requests').select('*,profiles:profiles!availability_requests_employee_id_fkey(full_name,color)').lte('start_date',to).gte('end_date',from).order('start_date')
+    supabase.from('availability_requests').select('*,profiles:profiles!availability_requests_employee_id_fkey(full_name,color)').order('start_date')
    ]);
    if(p.error)throw p.error;if(s.error)throw s.error;if(u.error)throw u.error;
    setPeople(p.data||[]);setShifts(s.data||[]);setUnavailability(u.data||[]);
