@@ -6,5 +6,12 @@
   "display": "standalone",
   "background_color": "#f6f7f9",
   "theme_color": "#f6f7f9",
-  "icons": []
+  "icons": [
+    {
+      "src": "/GLAVAT-shift/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
 }
