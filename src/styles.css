@@ -6,3 +6,17 @@
 @media print{.sidebar,.toolbar,.filters,header button,.actions,.icon{display:none!important}main{margin:0;padding:0}.calendar{grid-template-columns:repeat(7,1fr)}body{background:#fff}}
 
 .success{background:#ecfdf3;color:#16794a;padding:10px 12px;border-radius:9px;font-size:12px}
+
+/* Employee-specific schedule colors and readable monthly roster */
+.shift{background:color-mix(in srgb,var(--staff-color,#64748b) 10%,white);border-left-color:var(--staff-color,#64748b)}
+.shift b{color:var(--staff-color,#334155);font-size:11px;line-height:1.35;overflow-wrap:anywhere}
+.shift strong{color:var(--staff-color,#334155);font-size:10px}
+.month-cell{min-height:145px;gap:6px}
+.month-event{width:100%;display:flex;flex-direction:column;gap:2px;white-space:normal;overflow:visible;text-overflow:clip;text-align:left;background:color-mix(in srgb,var(--staff-color,#64748b) 11%,white);border-left:4px solid var(--staff-color,#64748b);color:#1f2937;padding:6px 7px;line-height:1.25}
+.month-event b{font-size:11px;font-weight:800;color:var(--staff-color,#334155);overflow-wrap:anywhere}
+.month-event span{font-size:10px;color:#475569;font-weight:700}
+.month-event:hover{background:color-mix(in srgb,var(--staff-color,#64748b) 18%,white)}
+.staff-dot{width:10px;height:10px;border-radius:50%;flex:0 0 10px;display:inline-block}
+.person .avatar{flex:0 0 38px}
+@media(max-width:700px){.month-cell{min-height:110px}.month-event{padding:4px 5px}.month-event b{font-size:9px}.month-event span{font-size:8px}}
+@media print{.month-cell{min-height:125px}.month-event{break-inside:avoid}}
