@@ -49,3 +49,22 @@
   .month-event b{font-size:7px;}
   .month-event span{font-size:6px;}
 }
+
+/* Employee unavailability */
+.availability-heading{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:12px}
+.availability-heading h2{font-size:19px;margin:0 0 5px}
+.availability-row{display:grid;grid-template-columns:minmax(130px,1fr) minmax(150px,1.2fr) auto;align-items:center;gap:10px;padding:15px 0;border-bottom:1px solid #edf0f4}
+.availability-person{display:flex;align-items:center;gap:9px;min-width:0}
+.availability-dates{font-size:12px;color:#536078}
+.availability-status{font-size:11px;font-weight:800;padding:6px 9px;border-radius:20px;white-space:nowrap;width:max-content}
+.availability-status.pending,.unavailable-tag.pending{background:#fff5df;color:#9a6500}
+.availability-status.approved,.unavailable-tag.approved{background:#fff0f0;color:#b83d4b}
+.availability-status.rejected{background:#f0f1f4;color:#818a99}
+.availability-reason{grid-column:1/-1;margin:0;color:#7e8798;font-size:12px}
+.availability-row>.actions{grid-column:1/-1;justify-content:flex-end}
+.unavailable-tag{display:flex;align-items:center;gap:4px;flex-wrap:wrap;padding:4px 5px;border-radius:6px;font-size:9px;margin-top:4px;line-height:1.2}
+.unavailable-tag b{font-size:9px}
+.unavailable-tag span{font-size:8px}
+.unavailable-tag.approved{border-left:2px solid #c64b58}
+.unavailable-tag.pending{border-left:2px solid #d49a26}
+@media(max-width:700px){.availability-heading{align-items:flex-start;flex-direction:column}.availability-row{grid-template-columns:1fr auto;gap:7px}.availability-dates{grid-column:1/-1}.availability-status{grid-column:1}.availability-row>.actions{grid-column:1/-1;justify-content:flex-start}.unavailable-tag{font-size:8px;padding:3px 2px}.unavailable-tag b{font-size:8px}.unavailable-tag span{font-size:7px}}
