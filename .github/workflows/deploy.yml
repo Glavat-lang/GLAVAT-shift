@@ -1,4 +1,4 @@
-name: Build and deploy GLAVAT SHIFT
+name: Build and deploy GLAVAT РАСПИСАНИЕ
 on:
   push:
     branches: [main]
