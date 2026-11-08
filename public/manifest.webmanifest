@@ -1,7 +1,8 @@
 {
-  "name": "GLAVAT SHIFT",
-  "short_name": "SHIFT",
-  "start_url": "/",
+  "name": "GLAVAT РАСПИСАНИЕ",
+  "short_name": "РАСПИСАНИЕ",
+  "start_url": "/GLAVAT-shift/",
+  "scope": "/GLAVAT-shift/",
   "display": "standalone",
   "background_color": "#f6f7f9",
   "theme_color": "#f6f7f9",
