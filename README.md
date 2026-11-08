@@ -1,4 +1,4 @@
-# GLAVAT SHIFT
+# GLAVAT РАСПИСАНИЕ
 
 Система расписания смен караоке «Баритон». React + Vite + Supabase Auth/PostgreSQL.
 
@@ -14,12 +14,12 @@ npm run dev
 
 ## Backend
 
-Supabase project: `yumtvxckvwkpxvpferdq` (eu-west-1). Схема базы уже применена в отдельном проекте GLAVAT SHIFT. RLS включён на прикладных таблицах; роли owner/admin/employee. Приглашения и публикация графика выполняются серверными RPC.
+Отдельный Supabase project GLAVAT SHIFT (eu-west-1). Схема базы уже применена; RLS включён на прикладных таблицах; роли owner/admin/employee. Приглашения и публикация графика выполняются серверными RPC.
 
 ## Deployment
 
-GitHub Actions workflow собирает Vite и публикует каталог `dist` в GitHub Pages при push в `main`. В репозитории нужно один раз включить Pages: Settings → Pages → Build and deployment → Source: GitHub Actions.
+GitHub Actions workflow собирает Vite и публикует каталог `dist` в GitHub Pages при push в `main`. В репозитории нужно включить Pages: Settings → Pages → Build and deployment → Source: GitHub Actions.
 
 ## Текущие ограничения
 
-Интерфейс и подключение Supabase являются начальной рабочей версией. Перед ежедневным использованием обязательны проверка первого входа владельца, приглашения сотрудников, прав RLS, конфликтов смен и полного цикла заявок на реальных тестовых аккаунтах. Email/push-уведомления и расширенные отчёты не заявляются как реализованные.
+Это ранняя версия продукта. До ежедневного использования обязательны проверка первого входа владельца, приглашения сотрудников, прав RLS, конфликтов смен и полного цикла заявок на реальных тестовых аккаунтах. Email/push-уведомления и расширенные отчёты пока не заявляются как реализованные.
