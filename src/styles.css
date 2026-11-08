@@ -68,3 +68,10 @@
 .unavailable-tag.approved{border-left:2px solid #c64b58}
 .unavailable-tag.pending{border-left:2px solid #d49a26}
 @media(max-width:700px){.availability-heading{align-items:flex-start;flex-direction:column}.availability-row{grid-template-columns:1fr auto;gap:7px}.availability-dates{grid-column:1/-1}.availability-status{grid-column:1}.availability-row>.actions{grid-column:1/-1;justify-content:flex-start}.unavailable-tag{font-size:8px;padding:3px 2px}.unavailable-tag b{font-size:8px}.unavailable-tag span{font-size:7px}}
+
+/* Month cell quick-add control */
+.month-cell{cursor:pointer;position:relative}
+.month-cell-top{display:flex;align-items:center;justify-content:space-between;min-height:22px}
+.month-add{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;flex:0 0 24px;border:1px solid #e4e7ef;border-radius:7px;background:#fff;color:#6259e8;opacity:.9;cursor:pointer}
+.month-add:hover{background:#eeeaff;border-color:#c9c3ff}
+@media(hover:hover){.month-add{opacity:0}.month-cell:hover .month-add,.month-add:focus-visible{opacity:1}}
